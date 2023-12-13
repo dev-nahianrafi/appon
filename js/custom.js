@@ -1,12 +1,7 @@
 $(function(){
-
-
   $(window).on("load",function(){
     $(".preloader").delay(1000).fadeOut(500)
   })
-
-
-
 
   $(window).scroll(function(){
     var scrolling = $(window).scrollTop()
@@ -22,23 +17,13 @@ $(function(){
     }else{
       $(".back_2_top").fadeOut(500)
     }
-
-
-
-
   })
-
 
   $(".back_2_top").click(function(){
     $('html, body').animate({
       scrollTop:0
     }, 2000)
   })
-
-
-
-
-
 
     $('.banner_main').slick({
         
@@ -50,7 +35,6 @@ $(function(){
         prevArrow:".prev",
         dots:true
       });
-
 
       $('.screenshots_inner').slick({
         
@@ -65,7 +49,6 @@ $(function(){
       new VenoBox({
         selector: ".my-video-links"
     });
-
 
     $('.feed_text').slick({
       slidesToShow: 1,
